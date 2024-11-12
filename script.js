@@ -9,7 +9,7 @@ document
 
     // Embed the appropriate player based on the selected platform
     if (strService === "spotify") {
-      trackPlayer.innerHTML = `<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/2X7mjeOwZuQFHshPT0l5Xg?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>`;
+      trackPlayer.innerHTML = `<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2oUAdYirtrMnm2m68mt3zM?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>`;
     } else if (strService === "apple-music") {
       trackPlayer.innerHTML = `
             <iframe style="width: 300px; height: 380px;" src="https://embed.music.apple.com/us/album/YOUR_TRACK_ID" frameborder="0" allow="autoplay" allowfullscreen></iframe>
