@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MiNDLEX</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Yeah Mr. Purple Rain/No quarter, I knew you'd wanna take a look at this xoxo -->
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <img
+        src="./img/logo_text.png"
+        alt="MiNDLEX Text Logo"
+        class="logo-text"
+      />
+      <img src="./img/logo.png" alt="MiNDLEX Logo" class="logo" />
+      <!-- <h1>MiNDLEX</h1> -->
+    </header>
+
+    <!-- Social Media Links Section -->
+    <section id="links">
+      <h2>Follow Me</h2>
+      <div class="profile-links">
+        <a href="https://spotify.com" class="icon spotify">Spotify</a>
+        <a href="https://apple.com" class="icon apple">Apple Music</a>
+        <a href="https://youtube.com" class="icon youtube">YouTube</a>
+      </div>
+    </section>
+
+    <!-- Latest Release Section -->
+    <section id="latest-releases">
+      <h2>Latest Releases</h2>
+      <div class="release-links">
+        <a href="spotify-link-to-latest-release" class="release-link"
+          >Spotify</a
+        >
+        <a href="apple-link-to-latest-release" class="release-link"
+          >Apple Music</a
+        >
+      </div>
+
+      <section class="listening">
+        <label for="streaming-service">Select your streaming platform:</label>
+        <select id="streaming-service">
+          <option value="" selected disabled>Select a platform</option>
+          <option value="spotify">Spotify</option>
+          <option value="apple-music">Apple Music</option>
+          <option value="soundcloud">SoundCloud</option>
+        </select>
+
+        <div id="music-player"></div>
+      </section>
+
+      <section class="spotify-carousel">
+        <div class="spotify-track">
+          <iframe
+            style="border-radius: 12px"
+            src="https://open.spotify.com/embed/track/4G66C0E51TfdH2zr6wIZMo?utm_source=generator&theme=0"
+            width="100%"
+            height="352"
+            frameborder="0"
+            allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"
+          ></iframe>
+        </div>
+        <div class="spotify-track">
+          <iframe
+            <iframe
+            <iframe
+            style="border-radius: 12px"
+            src="https://open.spotify.com/embed/track/2Z36p50NgrBo4aL4KwrckD?utm_source=generator&theme=0"
+            width="100%"
+            height="352"
+            frameborder="0"
+            allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"
+          ></iframe>
+        </div>
+      </section>
+      <!-- <div class="spotify-preview">
+        <iframe
+          style="border-radius: 12px"
+          src="https://open.spotify.com/embed/track/4G66C0E51TfdH2zr6wIZMo?utm_source=generator&theme=0"
+          width="100%"
+          height="352"
+          frameborder="0"
+          allowfullscreen=""
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy"
+        ></iframe>
+      </div> -->
+      <div class="youtube-preview">
+        <iframe
+          width="100%"
+          height="315"
+          src="https://www.youtube.com/embed/_NH8aGPWpf8?si=Nfk5Zf0zjXxItv01"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </section>
+
+    <section id="sonic-ecstasy">
+      <h2>
+        <span>Immerse yourself</span> <span>in the pulse of pure</span>
+        <span class="se-bold">Sonic Ecstasy</span>
+      </h2>
+
+      <section id="se-episodes">
+        <div class="video-container">
+          <iframe
+            width="100%"
+            height="315"
+            src="https://www.youtube.com/embed/zEFtjkqbOiI"
+            title="Sonic Ecstasy: Episode 01 - Techno 2024"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2024 MiNDLEX</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,211 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  color: #f2f2f2;
+  background-color: #121212;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  padding: 2rem;
+}
+
+/* Header */
+header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 2vh;
+  margin-bottom: 5vh;
+  /* justify-content: center; */
+  align-items: center;
+  /* background-color: #1db954; */
+}
+.logo-text {
+  /* flex-direction: column; */
+  width: 85vw; /* Relative to viewport width */
+  max-width: 320px;
+  height: auto;
+  margin-bottom: 1rem;
+  /* background-color: plum; */
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  /* flex-direction: column; */
+  width: 15vw; /* Relative to viewport width */
+  max-width: 120px;
+  height: auto;
+  /* margin-left: 5rem; */
+  margin-bottom: 1rem;
+  /* background-color: red; */
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+h1 {
+  font-size: 2rem; /* Responsive font size */
+  font-weight: bold;
+  color: #f2f2f2;
+}
+
+/* Links Section */
+#links {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+#links h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.profile-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+.icon {
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 0.6rem 1.2rem;
+  border: 2px solid #f2f2f2;
+  border-radius: 0.3rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+.icon:hover {
+  background-color: #1db954; /* Spotify green */
+  color: #121212;
+}
+
+/* Latest Release Section */
+#latest-releases {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+#latest-releases h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.listening {
+  text-align: center;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+#streaming-service {
+  margin: 20px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+#music-player {
+  margin-top: 30px;
+}
+
+.release-links {
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+.release-link {
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 0.6rem 1.2rem;
+  border: 2px solid #f2f2f2;
+  border-radius: 0.3rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+.release-link:hover {
+  background-color: #1db954;
+  color: #121212;
+}
+
+.spotify-carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding: 10px;
+}
+
+.spotify-track {
+  flex: 0 0 auto;
+  margin-right: 20px;
+  scroll-snap-align: start;
+}
+
+.spotify-carousel iframe {
+  border-radius: 10px;
+}
+
+/* Spotify Preview Embed */
+.spotify-preview iframe {
+  width: 80vw; /* 80% of viewport width for responsiveness */
+  max-width: 320px; /* Limits width on larger screens */
+  height: 50vw; /* 50% of viewport width as height for square aspect ratio */
+  max-height: 380px; /* Limits height on larger screens */
+  border: none;
+  border-radius: 0.5rem;
+  margin: 0 auto;
+  display: block;
+  /* box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5); /*delete??? */
+}
+
+.youtube-preview iframe {
+  width: 80vw; /* 80% of viewport width for responsiveness */
+  max-width: 320px; /* Limits width on larger screens */
+  height: 50vw; /* 50% of viewport width as height for square aspect ratio */
+  max-height: 380px; /* Limits height on larger screens */
+  border: none;
+  border-radius: 0.5rem;
+  margin: 0 auto;
+  display: block;
+  /* box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5); */
+}
+
+#sonic-ecstasy h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+span {
+  display: block;
+}
+
+.se-bold {
+  color: #1db954;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.9rem;
+  color: #888888;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+  .icon,
+  .release-link {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+}
