@@ -134,7 +134,8 @@ h1 {
   color: #121212;
 }
 
-.spotify-carousel .sonic-ecstasy-carousel {
+.spotify-carousel,
+.sonic-ecstasy-carousel {
   display: flex;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
@@ -142,13 +143,15 @@ h1 {
   padding: 10px;
 }
 
-.spotify-track .se-episode {
+.spotify-track,
+.se-episode {
   flex: 0 0 auto;
   margin-right: 20px;
   scroll-snap-align: start;
 }
 
-.spotify-carousel .sonic-ecstasy-carousel iframe {
+.spotify-carousel,
+.sonic-ecstasy-carousel iframe {
   border-radius: 10px;
 }
 
