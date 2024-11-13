@@ -65,6 +65,12 @@ h1 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
+
+.streaming-icons i {
+  font-size: 32px;
+  margin: 10px;
+  color: #333; /* Adjust color as needed */
+}
 .profile-links {
   display: flex;
   justify-content: center;
