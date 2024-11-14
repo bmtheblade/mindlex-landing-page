@@ -12,6 +12,9 @@ document.querySelector(".youtube").addEventListener("click", function () {
 document.querySelector(".soundcloud").addEventListener("click", function () {
   window.location.href = "https://soundcloud.com/mindlex";
 });
+document.querySelector(".beatport").addEventListener("click", function () {
+  window.location.href = "https://www.beatport.com/artist/mindlex/1107738";
+});
 document.querySelector(".instagram").addEventListener("click", function () {
   window.location.href = "https://instagram.com/mindlexmusic";
 });

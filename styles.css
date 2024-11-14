@@ -72,10 +72,7 @@ h1 {
 }
 
 /* Links Section */
-#links {
-  text-align: center;
-  margin-bottom: 3rem;
-}
+
 #links h2 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
@@ -177,29 +174,41 @@ button {
   color: #333; 
 } */
 
+#links {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
 .streaming-icons {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
 }
 
 .icon-row {
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  flex-wrap: wrap; /* Allow wrapping on very narrow screens */
+  gap: 3rem; /* Adjust gap to avoid excessive spacing on mobile */
 }
 
 .icon {
-  width: 8.5vw;
-  height: 8.5vw;
+  width: 7vw; /* Reduce width for better fit */
+  height: auto; /* Maintain aspect ratio */
+  max-width: 50px; /* Set a max size to prevent large icons on wider screens */
   transition: transform 0.3s;
 }
 
 .icon:hover {
   transform: scale(1.2);
 }
+
+/* .icon.beatport,
+.icon.youtube {
+  width: 10vw;
+  max-width: 10vw;
+} */
 
 /* .beatport-row {
   display: flex;
@@ -411,5 +420,12 @@ footer {
   .release-link {
     font-size: 1rem;
     padding: 0.5rem 1rem;
+  }
+  .icon {
+    width: 10vw; /* Larger width for smaller devices */
+    max-width: 40px; /* Smaller max width for compact display */
+  }
+  .icon-row {
+    gap: 0.5rem; /* Narrower gap on small screens */
   }
 }
