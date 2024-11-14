@@ -22,8 +22,6 @@ document.querySelector(".tiktok").addEventListener("click", function () {
   window.location.href = "https://www.tiktok.com/@mindlexmusic";
 });
 
-// Latest Release
-
 document.getElementById("spotify-play").addEventListener("click", function () {
   window.location.href =
     "https://open.spotify.com/track/2Z36p50NgrBo4aL4KwrckD?si=a89ebb26d6994061";
@@ -54,10 +52,8 @@ document
     const strService = this.value;
     const musicPlayer = document.getElementById("music-player");
 
-    // Clear previous content
     musicPlayer.innerHTML = "";
 
-    // Embed the appropriate player based on the selected platform
     if (strService === "spotify") {
       musicPlayer.innerHTML = `<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/3c1SXIKR5dmRRypPCB68Uq?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>`;
     } else if (strService === "apple-music") {
