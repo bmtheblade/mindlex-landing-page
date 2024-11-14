@@ -79,82 +79,92 @@ h1 {
 }
 
 /* Latest Release Section */
-
-#latest-releases h2 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-}
+/* 
 .modal {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.8); /* Semi-transparent overlay */
+  background: rgba(0, 0, 0, 0.8); 
   justify-content: center;
   align-items: center;
+} */
+
+#latest-releases {
+  text-align: center;
+  margin-bottom: 4rem;
 }
 
-.modal-content {
-  /* background: #222 maybe this colour??????; */
-  background-color: #ffffff;
-  padding: 20px;
-  color: #fff;
-  text-align: center;
-  width: 100%; /* Full width of the container */
-  max-width: 660px; /* Limits width on larger screens */
-  max-height: 380px; /* Limits height on larger screens */
+#latest-releases h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.youtube-latest iframe {
+  width: 100%;
+  display: block;
+  max-width: 660px;
+  height: 50vw;
+  max-height: 380px;
   border: none;
   border-radius: 0.5rem;
   margin: 0 auto;
 }
 
+.modal-content {
+  background-color: #ffffff;
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  max-width: 660px;
+  border: none;
+  border-radius: 0.5rem;
+  margin: 0 auto;
+}
+
+/* Consistent spacing for each .service row */
 .service {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 10px 0;
-  width: 100%; /* Ensures the service section spans the full width */
+  margin: 15px 0; /* Consistent vertical spacing between all .service items */
+  width: 100%; /* Full width of the container */
+  gap: 100 vw;
 }
 
+/* .service:last-child {
+  border-bottom: none; 
+} */
+
 .service img {
-  width: 25vw; /* You can change this based on your desired size */
+  width: 25vw;
   height: auto;
-  /* max-width: 32px; Ensures it doesn't exceed the button width */
   margin-right: 10px;
 }
 
-/* .service #soundcloud-play {
-  width: 10vw;
-} */
-
 .play-btn,
 .buy-btn {
-  background-color: rgb(29, 185, 84); /* Spotify green */
+  background-color: rgb(29, 185, 84);
   font-family: "Rajdhani", Arial, sans-serif;
   border: none;
   color: #fff;
   padding: 8px 12px;
   border-radius: 4px;
   cursor: pointer;
-  display: inline-flex; /* Makes sure the buttons are inline and flex */
-  align-items: center; /* Vertically aligns the text */
-  justify-content: center; /* Ensures text is centered in the button */
-  min-width: 50px; /* Ensures buttons have a minimum width */
-  flex-grow: 1; /* Ensures buttons stretch to the same size */
-  max-width: 70px; /* Optional: can limit the button size */
+  width: 100%;
+  max-width: 70px;
+  text-align: center;
 }
 
 button {
-  width: 100%; /* Ensures that both Play and Buy buttons take up the same space */
+  width: 100%;
 }
 
-.play-btn {
-  width: 100%; /* Ensures the play button spans the full space */
-}
-
-.buy-btn {
-  width: 100%; /* Ensures the buy button spans the full space */
+.play-btn:hover,
+.buy-btn:hover {
+  background-color: rgb(24, 150, 68);
 }
 
 /* .streaming-icons i {
@@ -262,35 +272,14 @@ button {
   display: block;
 } */
 
-#latest-releases {
-  text-align: center;
-  margin-bottom: 4rem;
-
-  /* display: flex;
-  flex-direction: column; */
-}
-.youtube-latest iframe {
-  width: 100%; /* Full width of the container */
-
-  display: block; /* Centers the iframe in its container */
-
-  max-width: 660px; /* Limits width on larger screens */
-  height: 50vw; /* 50% of viewport width as height for square aspect ratio */
-  max-height: 380px; /* Limits height on larger screens */
-  border: none;
-  border-radius: 0.5rem;
-  margin: 0 auto;
-}
-
-.apple-latest {
-  /* You can adjust margin or padding if you want more space between the embeds */
+/* .apple-latest {
   margin-bottom: 20px;
-}
+} */
 
-.soundcloud-latest {
+/* .soundcloud-latest {
   flex: 0 0 auto;
-  /* margin-right: 20px; */
-}
+ 
+} */
 
 #explore {
   font-family: "Rajdhani", "Courier New", monospace;
