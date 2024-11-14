@@ -185,7 +185,7 @@ button {
 
 .icon-row {
   display: flex;
-  margin-top: -10px;
+  margin-top: -20px;
   justify-content: center;
   flex-wrap: wrap; /* Allow wrapping on very narrow screens */
   gap: 3rem; /* Adjust gap to avoid excessive spacing on mobile */
