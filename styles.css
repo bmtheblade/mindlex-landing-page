@@ -9,7 +9,8 @@ h1,
 h2,
 h3 {
   font-family: "Rajdhani", Arial, sans-serif;
-  color: #ddfe00;
+  /* color: #ddfe00; */
+  color: #1db954;
 }
 
 body {
@@ -67,6 +68,8 @@ header {
 h1 {
   font-size: 2rem; /* Responsive font size */
   font-weight: bold;
+  margin-bottom: 4rem;
+
   color: #ffffff;
   /* color: #ddfe00; */
 }
@@ -142,6 +145,7 @@ h1 {
   width: 25vw;
   height: auto;
   margin-right: 10px;
+  /* background-color: aqua; */
 }
 
 .play-btn,
@@ -166,23 +170,6 @@ button {
 .buy-btn:hover {
   background-color: rgb(24, 150, 68);
 }
-
-/* .streaming-icons i {
-  font-size: 32px;
-  margin: 10px;
-  color: #333; /* Adjust color as needed */
-/* }  */
-
-/* .streaming-icons,
-.streaming-icons svg {
-  color: #4267b2;
-} */
-/* 
-.streaming-icons img {
-  font-size: 32px;
-  margin: 10px;
-  color: #333; 
-} */
 
 #links {
   text-align: center;
@@ -214,85 +201,21 @@ button {
   transform: scale(1.2);
 }
 
-/* .icon.beatport,
-.icon.youtube {
-  width: 10vw;
-  max-width: 10vw;
-} */
-
-/* .beatport-row {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #1db954;
-} */
-
-/* .beatport {
-  margin: 0; 
-  width: 25vw; 
-  height: 25vw; 
-  max-width: 150px; 
-  max-height: 150px; 
-  object-fit: contain; 
- 
-  display: block;
-  padding: -200vw;
-  margin-left: auto; 
-  margin-right: auto; 
-} */
-
-/* .profile-links {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  margin-top: 1rem;
-} */
-/* .icon {
-  color: #f2f2f2;
-  text-decoration: none;
-  font-size: 1.2rem;
-  padding: 0.6rem 1.2rem;
-  border: 2px solid #f2f2f2;
-  border-radius: 0.3rem;
-  transition: background-color 0.3s, color 0.3s;
-}
-.icon:hover {
-  background-color: #1db954; 
-  color: #121212;
-} */
-
-/* .youtube-latest iframe {
-  width: 80vw; 
-  max-width: 320px; 
-  height: 50vw; 
-  max-height: 380px; 
-  border: none;
-  border-radius: 0.5rem;
-  margin: 0 auto;
-  display: block;
-} */
-
-/* .apple-latest {
-  margin-bottom: 20px;
-} */
-
-/* .soundcloud-latest {
-  flex: 0 0 auto;
- 
-} */
-
 #explore {
   font-family: "Rajdhani", "Courier New", monospace;
   text-align: center;
-  padding: 20px;
+  padding: 40px;
   background-color: #ffffff;
-  /* background-color: rgb(74, 224, 14); MAYBE THIS COLOUR ????*/
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
+  border-radius: 0; /* Removed rounded corners */
+  border-top-left-radius: 0; /* Ensures no rounded corners at the top */
+  border-top-right-radius: 0; /* Ensures no rounded corners at the top */
+  border-bottom-left-radius: 0.5rem; /* Add rounded corners at the bottom left */
+  border-bottom-right-radius: 0.5rem; /* Add rounded corners at the bottom right */
 }
 
 #streaming-service {
-  margin: 20px;
+  margin-bottom: 25px;
   padding: 10px;
   font-size: 16px;
 }
@@ -301,25 +224,16 @@ button {
   margin-top: 30px;
 }
 
-.release-links {
-  background-color: aqua;
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  margin-bottom: 1.5rem;
+.youtube-latest iframe {
+  border-bottom-left-radius: 0; /* Remove bottom left rounded corners */
+  border-bottom-right-radius: 0; /* Remove bottom right rounded corners */
 }
-.release-link {
-  color: #f2f2f2;
-  text-decoration: none;
-  font-size: 1.1rem;
-  padding: 0.6rem 1.2rem;
-  border: 2px solid #f2f2f2;
-  border-radius: 0.3rem;
-  transition: background-color 0.3s, color 0.3s;
-}
-.release-link:hover {
-  background-color: #1db954;
-  color: #121212;
+
+.modal-content {
+  border-top-left-radius: 0; /* Remove top left rounded corners */
+  border-top-right-radius: 0; /* Remove top right rounded corners */
+  border-bottom-left-radius: 0; /* Remove bottom left rounded corners */
+  border-bottom-right-radius: 0; /* Remove bottom right rounded corners */
 }
 
 #music-videos,
@@ -337,6 +251,7 @@ button {
   -webkit-overflow-scrolling: touch;
   padding: 10px;
   gap: 10px; /* Adds space between items */
+  margin-top: 15px;
 }
 
 .music-video,
@@ -418,3 +333,70 @@ footer {
     gap: 0.5rem; /* Narrower gap on small screens */
   }
 }
+
+/* .icon.beatport,
+.icon.youtube {
+  width: 10vw;
+  max-width: 10vw;
+} */
+
+/* .beatport-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1db954;
+} */
+
+/* .beatport {
+  margin: 0; 
+  width: 25vw; 
+  height: 25vw; 
+  max-width: 150px; 
+  max-height: 150px; 
+  object-fit: contain; 
+ 
+  display: block;
+  padding: -200vw;
+  margin-left: auto; 
+  margin-right: auto; 
+} */
+
+/* .profile-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+} */
+/* .icon {
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 0.6rem 1.2rem;
+  border: 2px solid #f2f2f2;
+  border-radius: 0.3rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+.icon:hover {
+  background-color: #1db954; 
+  color: #121212;
+} */
+
+/* .youtube-latest iframe {
+  width: 80vw; 
+  max-width: 320px; 
+  height: 50vw; 
+  max-height: 380px; 
+  border: none;
+  border-radius: 0.5rem;
+  margin: 0 auto;
+  display: block;
+} */
+
+/* .apple-latest {
+  margin-bottom: 20px;
+} */
+
+/* .soundcloud-latest {
+  flex: 0 0 auto;
+ 
+} */
