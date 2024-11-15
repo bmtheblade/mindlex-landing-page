@@ -24,26 +24,27 @@ document.querySelector(".tiktok").addEventListener("click", function () {
 
 document.getElementById("spotify-play").addEventListener("click", function () {
   window.location.href =
-    "https://open.spotify.com/track/2Z36p50NgrBo4aL4KwrckD?si=a89ebb26d6994061";
+    "https://open.spotify.com/track/1WxGnZneuCvvDq5Do6qjNG?si=64ace6b4c01741fe";
 });
 
 document
   .getElementById("apple-music-play")
   .addEventListener("click", function () {
     window.location.href =
-      "https://music.apple.com/us/album/bring-me-up/1753100058?i=1753100419";
+      "https://music.apple.com/gb/album/pulsar-single/1766511663";
   });
 
 document.getElementById("youtube-play").addEventListener("click", function () {
-  window.location.href = "https://youtu.be/xNyWa0ww8yw?si=d5RG0FNoOVVkDLpj";
+  window.location.href =
+    "https://www.youtube.com/watch?v=yHRUFLCq49c&ab_channel=MiNDLEX";
 });
 document
   .getElementById("soundcloud-play")
   .addEventListener("click", function () {
-    window.location.href = "https://on.soundcloud.com/1FCe8ALrab6Dc7pW7";
+    window.location.href = "https://soundcloud.com/mindlex/pulsar";
   });
 document.getElementById("beatport-buy").addEventListener("click", function () {
-  window.location.href = "https://www.beatport.com/release/bring-me-up/4622557";
+  window.location.href = "https://www.beatport.com/release/pulsar/4719452";
 });
 
 document
